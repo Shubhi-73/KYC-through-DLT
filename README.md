@@ -1,3 +1,3 @@
 # KYC-through-DLT
-FinTech
+# FinTech
 Enhancing the Know Your Customer (KYC) process through blockchain
