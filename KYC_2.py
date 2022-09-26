@@ -68,12 +68,10 @@ blockchain = Blockchain() # making an instance of the class
         
         # Mining the block
 @app.route('/mine_block', methods = ['GET','POST'])
-def mine_block(): #basically just calling all the functions
-        if request.method == 'POST': #data from the form
-            print("name")
+def mine_block(): 
+        if request.method == 'POST':
             name = request.form.get("name")
             id = request.form.get("id")
-            print(name)
             blockchain.get_data(name, id)
             
         previous_block = blockchain.get_previous_block()
